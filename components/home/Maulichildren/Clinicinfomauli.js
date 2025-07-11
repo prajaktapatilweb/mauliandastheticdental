@@ -57,7 +57,7 @@ const Clinicinfomauli = () => {
       </Grid>
 
       {/* Right Side (Text Content) */}
-      <Grid item xs={12} md={6} textAlign="justify" sx={{ p: 1 }} alignItems="center"
+      <Grid item xs={12} md={6} textAlign="justify" sx={{ p: 2 }} alignItems="center"
         justifyContent="center">
         <motion.div
           className="textcontainer"

@@ -48,7 +48,7 @@ function Mauliheader() {
             position="static"
             sx={{
                 backgroundImage: {
-                    xs: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/nashikclinic/clinics9.webp")`,
+                    xs: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/headerback4.jpg")`,
                     md: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('/images/headerback4.jpg')`
                 },
                 backgroundRepeat: "no-repeat",

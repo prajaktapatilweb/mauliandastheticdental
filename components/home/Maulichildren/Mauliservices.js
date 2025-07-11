@@ -108,7 +108,6 @@ export default function Mauliservices() {
                         sx={{
                           py: 2,
                           px: 2,
-                          minHeight: { xs: '280px', sm: '300px', md: '160px' }, // Set consistent min-height across screen sizes
                           borderRadius: 4,
                           display: 'flex', // Flexbox to align content inside
                           flexDirection: 'column',
