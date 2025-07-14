@@ -16,41 +16,60 @@ import {
   Link,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import {
+  MedicalServices,
+  PrecisionManufacturing,
+  Favorite,
+  LocalOffer,
+} from "@mui/icons-material";
+import Navbarindex from '../components/header/navbarindex';
+
 
 export default function Home() {
+  const uspData = [
+  {
+    title: "Experienced Doctors",
+    icon: <MedicalServices sx={{ fontSize: 40, color: "#1b3898" }} />,
+    description: "Highly qualified dentist and pediatrician with years of trusted care.",
+  },
+  {
+    title: "Modern Equipment",
+    icon: <PrecisionManufacturing sx={{ fontSize: 40, color: "#1b3898" }} />,
+    description: "Advanced technology for accurate diagnosis and treatment.",
+  },
+  {
+    title: "Patient-Centered Care",
+    icon: <Favorite sx={{ fontSize: 40, color: "#1b3898" }} />,
+    description: "We prioritize comfort, safety, and a caring approach for every patient.",
+  },
+  {
+    title: "Affordable Packages",
+    icon: <LocalOffer sx={{ fontSize: 40, color: "#1b3898" }} />,
+    description: "Cost-effective solutions without compromising on quality.",
+  },
+];
   return (
     <>
     <Box component="section">
    
 
-          <AppBar position="static" sx={{ backgroundColor: '#00695f' }}>
-        <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            Our Clinics
-          </Typography>
-          <Button color="inherit" href="#clinics">Clinics</Button>
-          <Button color="inherit" href="#usp">Why Us</Button>
-          <Button color="inherit" href="#faq">FAQs</Button>
-          <Button color="inherit" href="#contact">Contact</Button>
-        </Toolbar>
+          <AppBar position="static" sx={{ backgroundColor: '#1b3898' }}>
+            
+            <Navbarindex/>
       </AppBar>
 
       {/* Hero Section */}
-      <Box sx={{ py: 8, textAlign: 'center', bgcolor: '#e0f7fa' }}>
+      <Box sx={{ py: 8, textAlign: 'center', bgcolor: '#f4f6ff' }}>
         <Container>
-        <Typography variant="h3" gutterBottom>
+        <Typography variant="h2" gutterBottom sx={{color:'#1b3898'}}>
           Welcome to Our Clinics
         </Typography>
-        <Typography variant="h6">
+        <Typography variant="h6" sx={{color:'#1b3898',fontWeight:200,mt:-2}}> 
           Choose the best care for your Dental and Pediatric needs.
         </Typography>
         <p>At our unique dual-specialty hospital, we combine expert dental care and compassionate pediatric services under one roof. Led by a dedicated husband-wife team — a skilled dentist and a caring pediatrician — we ensure that both children and adults receive personalized, professional care in a warm, family-friendly environment.</p>
-      </Container>
-      </Box>
-
-      {/* Clinics Section */}
-      <Container id="clinics" sx={{ py: 6 }}>
-        <Grid container spacing={4}>
+     
+        <Grid container spacing={4} sx={{py:5}}>
           {/* <Grid item xs={12} md={6}>
             <Card sx={{ p: 3, bgcolor: '#fff3e0' }}>
               <CardContent>
@@ -98,28 +117,48 @@ export default function Home() {
   
         </Grid>
       </Container>
-
+</Box>
       {/* USP Section */}
-      <Box id="usp" sx={{ bgcolor: '#f1f8e9', py: 6 }}>
-        <Container>
-          <Typography variant="h4" align="center" gutterBottom>
-            Why Choose Us?
-          </Typography>
-          <Grid container spacing={4} sx={{ mt: 2 }}>
-            {['Experienced Doctors', 'Modern Equipment', 'Patient-Centered Care', 'Affordable Packages'].map((usp, i) => (
-              <Grid item xs={12} md={3} key={i}>
-                <Card sx={{ p: 2, textAlign: 'center' }}>
-                  <Typography variant="h6">{usp}</Typography>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </Box>
+      <Box id="usp" sx={{ bgcolor: "white", py: 7 }}>
+      <Container>
+        <Typography variant="h3" align="center" gutterBottom sx={{color:'#1b3898'}}>
+          Why Choose Us?
+        </Typography>
+        <Grid container spacing={4} sx={{ mt: 2 }}>
+          {uspData.map((item, i) => (
+            <Grid item xs={12} sm={6} md={3} key={i}>
+              <Card
+                elevation={6}
+                sx={{
+                  p: 3,
+                  borderRadius: 3,
+                  textAlign: "center",
+                  height: "100%",
+                  transition: "transform 0.3s, box-shadow 0.3s",
+                  "&:hover": {
+                    transform: "translateY(-6px)",
+                    boxShadow: "0 8px 20px rgba(0,0,0,0.12)",
+                  },
+                }}
+              >
+                <Box sx={{ mb: 2 }}>{item.icon}</Box>
+                <Typography variant="h6" fontWeight={600} gutterBottom>
+                  {item.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {item.description}
+                </Typography>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
+      <Box sx={{ py: 8, textAlign: 'center', bgcolor: '#f4f6ff' }}>
 
       {/* FAQ Section */}
       <Container id="faq" sx={{ py: 6 }}>
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography variant="h3" align="center" gutterBottom sx={{color:'#1b3898',pb:3}}>
           Frequently Asked Questions
         </Typography>
         {[
@@ -127,19 +166,19 @@ export default function Home() {
           ['Do you accept walk-ins?', 'Yes, but appointments are preferred to avoid waiting.'],
           ['Are there any consultation charges?', 'First consultation is free. Follow-ups are charged nominally.'],
         ].map(([question, answer], i) => (
-          <Accordion key={i} sx={{ mb: 2 }}>
+          <Accordion key={i} sx={{ mb: 2,border:'1px solid lightgrey' }}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography>{question}</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>{answer}</Typography>
+              <Typography sx={{textAlign:'left'}}>{answer}</Typography>
             </AccordionDetails>
           </Accordion>
         ))}
       </Container>
-
+</Box>
       {/* Footer */}
-      <Box id="contact" sx={{ bgcolor: '#263238', color: 'white', py: 4, textAlign: 'center' }}>
+      <Box id="contact" sx={{ bgcolor: '#0A163C', color: 'white', py: 4, textAlign: 'center' }}>
         <Typography variant="body1">
           © {new Date().getFullYear()} Aesthetic & Mauli Clinics. All rights reserved.
         </Typography>
