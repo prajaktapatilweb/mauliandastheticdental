@@ -16,6 +16,8 @@ import {
   Link,
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { StyledButton } from '../components/styled-button';
 import {
   MedicalServices,
   PrecisionManufacturing,
@@ -23,6 +25,7 @@ import {
   LocalOffer,
 } from "@mui/icons-material";
 import Navbarindex from '../components/header/navbarindex';
+import { motion } from 'framer-motion';
 
 
 export default function Home() {
@@ -48,56 +51,165 @@ export default function Home() {
     description: "Cost-effective solutions without compromising on quality.",
   },
 ];
+const MotionButton = motion(Button);
   return (
     <>
     <Box component="section">
-   
-
           <AppBar position="static" sx={{ backgroundColor: '#1b3898' }}>
-            
             <Navbarindex/>
       </AppBar>
 
       {/* Hero Section */}
-      <Box sx={{ py: 8, textAlign: 'center', bgcolor: '#f4f6ff' }}>
+      <Box sx={{ py: 3, textAlign: 'center', bgcolor: 'white'}}>
         <Container>
-        <Typography variant="h2" gutterBottom sx={{color:'#1b3898'}}>
-          Welcome to Our Clinics
+        <Box sx={{ py: 6, px: { xs: 2, md: 4 }, textAlign: 'center' }}>
+     <Typography variant="h2" gutterBottom sx={{ color: '#1b3898', fontWeight: 600 }}>
+        One Destination. Two Specialties. Total Family Care.
+      </Typography>
+
+      <Typography variant="h6" sx={{ color: '#1b3898', fontWeight: 300, mt: -1,fontSize:17 }}>
+     Two expert-led clinics under one roof in Kalamboli,Navi Mumbai — providing complete dental and pediatric care for all age groups.
+      </Typography>
+
+      {/* Description */}
+      <Box sx={{ mt: 4, textAlign: 'left', maxWidth: 900, mx: 'auto' }}>
+        <Typography variant="body1" sx={{ fontSize: '1.1rem', lineHeight: 1.8 }}>
+          Welcome to our dual-specialty healthcare center, where compassionate care meets clinical excellence. <br />
+          We bring together:
         </Typography>
-        <Typography variant="h6" sx={{color:'#1b3898',fontWeight:200,mt:-2}}> 
-          Choose the best care for your Dental and Pediatric needs.
-        </Typography>
-        <p>At our unique dual-specialty hospital, we combine expert dental care and compassionate pediatric services under one roof. Led by a dedicated husband-wife team — a skilled dentist and a caring pediatrician — we ensure that both children and adults receive personalized, professional care in a warm, family-friendly environment.</p>
+
+        {/* Bullet Points */}
+        <Box component="ul" sx={{ pl: 3, mt: 2 }}>
+          <li>
+            <Typography variant="body1" sx={{ fontSize: '1.05rem', lineHeight: 1.7 }}>
+              A trusted Children & Multispeciality Hospital led by a senior pediatrician with 17+ years of experience in child health, neonatal care, and general medicine.
+            </Typography>
+          </li>
+          <li style={{ marginTop: '0.75rem' }}>
+            <Typography variant="body1" sx={{ fontSize: '1.05rem', lineHeight: 1.7 }}>
+              A state-of-the-art Dental Clinic led by a highly experienced dental professional with over 15 years of expertise in cosmetic and restorative dentistry.
+            </Typography>
+          </li>
+        </Box>
+      </Box>
+
+      {/* CTA Heading */}
+      <Typography
+        variant="h4"
+        sx={{
+          mt: 6,
+          fontWeight: 700,
+          color: '#1b3898',
+          textAlign: 'center',
+        }}
+      >
+        Explore our dedicated service pages to know more.
+      </Typography>
+    </Box>
      
-        <Grid container spacing={4} sx={{py:5}}>
-          {/* <Grid item xs={12} md={6}>
-            <Card sx={{ p: 3, bgcolor: '#fff3e0' }}>
-              <CardContent>
-                <Typography variant="h5">Aesthetic Dental Clinic</Typography>
-                <Typography variant="body1" sx={{ mt: 1 }}>
-                  Specializing in cosmetic and general dentistry with modern facilities and expert care.
-                </Typography>
-                <Button variant="contained" color="primary" sx={{ mt: 2 }} href="/aesthetic">
-                  Visit Clinic
-                </Button>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Card sx={{ p: 3, bgcolor: '#ede7f6' }}>
-              <CardContent>
-                <Typography variant="h5">Mauli Pediatric Clinic</Typography>
-                <Typography variant="body1" sx={{ mt: 1 }}>
-                  Focused on your child’s health with love, care, and professional pediatric expertise.
-                </Typography>
-                <Button variant="contained" color="secondary" sx={{ mt: 2 }} href="/mauli">
-                  Visit Clinic
-                </Button>
-              </CardContent>
-            </Card>
-          </Grid> */}
+        <Grid container spacing={4} sx={{ pb: 5 }}>
+  {/* Aesthetic Dental Clinic Card */}
+  <Grid item xs={12} md={6}>
+    <Card
+      sx={{
+        p: 3,
+        bgcolor: '#fff8f6',
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        borderRadius: 2,
+        boxShadow: '0 6px 20px rgba(0, 0, 0, 0.4)',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+        '&:hover': {
+          transform: 'translateY(-6px)',
+          boxShadow: '0 10px 28px rgba(0, 0, 0, 0.2)',
+        },
+      }}
+    >
+      <CardContent>
+        <Typography variant="h4" sx={{ color: '#b75c1c', fontWeight: 700 }}>
+          Aesthetic Dental Clinic
+        </Typography>
+
+        <Typography variant="body1" sx={{ mt: 1.5, textAlign: 'justify' }}>
+          From preventive checkups and painless root canals to smile designing and implants, Aesthetic Dental Clinic offers modern, personalized dental care using advanced techniques and equipment.
+        </Typography>
+
+        <Button
+          variant="contained"
+          sx={{ mt: 3, backgroundColor: '#b75c1c', '&:hover': { backgroundColor: '#994a15',color:'white' },letterSpacing:1,fontSize:14 }}
+          href="/astheticdental"
+        >
+         <Box sx={{ display: "flex", alignItems: "center", gap: 1,letterSpacing:1 }}>
+                Visit Website
+                  <motion.span
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <ArrowForwardIosIcon sx={{ fontSize: 18 }} />
+                  </motion.span>
+                </Box>
+        </Button>
+      </CardContent>
+    </Card>
+  </Grid>
+
+  {/* Mauli Pediatric Clinic Card */}
+  <Grid item xs={12} md={6}>
+    <Card
+      sx={{
+        p: 3,
+        bgcolor: '#eaf4ff',
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        borderRadius: 2,
+        boxShadow: '0 6px 20px rgba(0, 0, 0, 0.4)',
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+        '&:hover': {
+          transform: 'translateY(-6px)',
+          boxShadow: '0 10px 28px rgba(0, 0, 0, 0.2)',
+        },
+      }}
+    >
+      <CardContent>
+        <Typography variant="h4" sx={{ color: '#1b3898', fontWeight: 700 }}>
+          Mauli Pediatric Clinic
+        </Typography>
+
+        <Typography variant="body1" sx={{ mt: 1.5, textAlign: 'justify' }}>
+          Mauli Hospital offers complete pediatric care — including NICU, vaccinations, child development, and adolescent health — along with general and emergency medical services for families.
+        </Typography>
+             <Button
+  variant="contained"
+  size="medium"
+   href="/maulichildren"
+  sx={{
+   mt:3,
+   backgroundColor:'#1b3898',
+  gap: 1.5,
+  '&:hover': { backgroundColor: '#12276A',color:'white' }
+
+  }}
+>
+
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1,letterSpacing:1 }}>
+                Visit Website
+                  <motion.span
+                    animate={{ x: [0, 5, 0] }}
+                    transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+                    style={{ display: "flex", alignItems: "center" }}
+                  >
+                    <ArrowForwardIosIcon sx={{ fontSize: 18 }} />
+                  </motion.span>
+                </Box>
+              </Button>
           
-      <HeroSection
+         
+      </CardContent>
+    </Card>
+     {/* <HeroSection
         title="Expert Dental Care for All Ages"
         description=" Dental Clinic in Kalamboli, Navi Mumbai - Aesthetic"
         buttonText="Let’s Perfect Your Smile"
@@ -113,13 +225,15 @@ export default function Home() {
          link='/maulichildren'
         bgImage="/images/headerback3.jpg"
         gradient="to right, rgba(30,144,255, 0.6), rgba(30,144,255, 0.6)"
-      />
+      /> */}
   
-        </Grid>
+  </Grid>
+</Grid>
+
       </Container>
 </Box>
       {/* USP Section */}
-      <Box id="usp" sx={{ bgcolor: "white", py: 7 }}>
+      <Box id="usp" sx={{ bgcolor: "#f4f6ff", py: 7 }}>
       <Container>
         <Typography variant="h3" align="center" gutterBottom sx={{color:'#1b3898'}}>
           Why Choose Us?
@@ -154,7 +268,7 @@ export default function Home() {
         </Grid>
       </Container>
     </Box>
-      <Box sx={{ py: 8, textAlign: 'center', bgcolor: '#f4f6ff' }}>
+      <Box sx={{ py: 8, textAlign: 'center', bgcolor: 'white' }}>
 
       {/* FAQ Section */}
       <Container id="faq" sx={{ py: 6 }}>
