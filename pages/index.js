@@ -264,7 +264,7 @@ export default function Home() {
             </Grid>
           </Container>
         </Box>
-        <Box sx={{ py: 8, textAlign: 'center', bgcolor: 'white' }}>
+        <Box sx={{ py: 8,  bgcolor: 'white' }}>
 
           {/* FAQ Section */}
           <Container id="faq" sx={{ py: 6 }}>
