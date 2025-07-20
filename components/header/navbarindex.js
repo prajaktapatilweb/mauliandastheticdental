@@ -139,7 +139,7 @@ export default function Navbarindex(props) {
                             </IconButton>
                         )}
                         <Box sx={{ flexGrow: 1, textAlign: { xs: 'right', sm: 'right', md: 'left', lg: 'left' } }}>
-                            <Image src="/astheticlogo.jpg" width={90} height={80}></Image>
+                            {/* <Image src="/astheticlogo.jpg" width={90} height={80}></Image> */}
                         </Box>
                         {isLargeScreen && (
                             <Box sx={{ flexGrow: 0 }}>
