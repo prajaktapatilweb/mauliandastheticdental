@@ -528,3 +528,52 @@ section {
   color: #f4b400;
   /* Golden star color */
 }
+
+
+/* coach card css*/
+
+.cards {
+  position: relative;
+  transition: 0.5s;
+}
+
+.cards .lines {
+  position: absolute;
+  inset: 0;
+  background: #152C79;
+}
+.cards .lines::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    transparent,
+    #d4af37,
+    #d4af37,
+    #d4af37,
+    transparent
+  );
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.cards .lines::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  background-color: white;
+  /* background-color: #1fa2ff; */
+}
+/*coach photo behind border*/
+
+
