@@ -93,7 +93,7 @@ const Mainslider = () => {
   key={index}
   sx={{
     position: "relative",
-    height: { xs: '80vh', md: '90vh' },
+    height: { xs: '50vh', md: '90vh' },
     width: "100%",
   }}
 >
@@ -117,7 +117,7 @@ const Mainslider = () => {
       height: "100%",
       background: {
         xs: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))",
-        md: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4))",
+        md: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))",
       },
       zIndex: 2,
     }}
@@ -175,7 +175,7 @@ const Mainslider = () => {
   },
                 }}
               >
-                <Typography variant="h4" gutterBottom sx={{ color: "#fff",fontWeight:700,letterSpacing:1}}>
+                <Typography variant="h4" gutterBottom sx={{ color: "#152C79",fontWeight:700,letterSpacing:1,textShadow: "2px 2px 6px rgba(133, 132, 132, 0.4)"}}>
                   {card.title}
                 </Typography>
                 <Typography variant="body1" gutterBottom sx={{ color: "#f0f0f0", mb: 2,textAlign:'justify',fontFamily:'Open Sans',fontSize:17,letterSpacing:0.6 }}>

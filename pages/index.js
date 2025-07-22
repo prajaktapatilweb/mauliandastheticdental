@@ -24,6 +24,10 @@ import Navbarindex from '../components/header/navbarindex';
 import { motion } from 'framer-motion';
 import Mainslider from '../components/home/Mainslider';
 import Cliniclinks from '../components/home/Cliniclinks';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
+
+
 
 export default function Home() {
   const uspData = [
@@ -116,6 +120,8 @@ Just click “Edit Text” or double click me to add your own content and make c
                     sx={{
                       p: 3,
                       borderRadius: 3,
+                      borderBottom:'4px solid #152C79',
+                     
                       textAlign: "center",
                       height: "100%",
                       transition: "transform 0.3s, box-shadow 0.3s",
@@ -154,8 +160,15 @@ Just click “Edit Text” or double click me to add your own content and make c
 
 
             ].map(([question, answer], i) => (
-              <Accordion key={i} sx={{ mb: 2, border: '1px solid lightgrey' }}>
-                <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Accordion key={i} sx={{ mb: 2,
+                        border:'1.5px solid',
+                        borderColor:'secondary.main',
+                        borderRadius: '5px',
+                        boxShadow: '0 4px 10px rgba(0,0,0,0.1)',
+                        transition: 'all 0.3s ease',
+                        '&:hover': { boxShadow: '0 6px 15px rgba(0,0,0,0.2)' },
+                        backgroundColor: '#f9f9f9',}}>
+                <AccordionSummary expandIcon={<ExpandMoreIcon  sx={{ color: '#d4af37' }}/>}>
                   <Typography>{question}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -172,21 +185,40 @@ Just click “Edit Text” or double click me to add your own content and make c
             <Grid container spacing={4} justifyContent="center" alignItems="center">
                          
                             <Grid item xs={12} sm={12} md={5}>
-             <Typography variant="h6"> Mauli Children & Multispeciality Hospital</Typography><br></br>
+             <Typography variant="h6" sx={{color:'#d4af37',textShadow: "2px 2px 6px rgba(0,0,0,0.6)",}}> Mauli Children & Multispeciality Hospital</Typography><br></br>
+ <Box display="flex" alignItems="center" mb={2}>
+                  <LocationOnIcon color="white" sx={{ mr: 1 }} />
+                <Typography variant="body1">
 
-          <Typography variant="body1">
 Shop no. 30, 1st Floor, Amarante CHS, Sector 9E,<br></br>
 Near D-Mart, Kalamboli, Navi Mumbai – 410218<br></br>
-Phone: +91- 74985 57098/022 3544 1475
+</Typography>
+</Box>
+ <Box display="flex" alignItems="center" mb={2}>
+ <CallTwoToneIcon color="white" sx={{ mr: 2,ml:0.5,fontSize:19 }} />
+
+<Typography variant="body1"> +91- 74985 57098/022 3544 1475</Typography>
+
+</Box>
 
             {/* © {new Date().getFullYear()} Aesthetic & Mauli Clinics. All rights reserved. */}
-          </Typography><br></br>
-          <Typography variant="h6">Aesthetic Dental Clinic</Typography> <br></br>
-          <Typography variant="body1">
-Shop no. 31, 1st Floor, Amarante CHS, Sector 9E,<br></br>
+          
+          
+          <Typography variant="h6" sx={{color:'#d4af37',textShadow: "2px 2px 6px rgba(0,0,0,0.6)"}}>Aesthetic Dental Clinic</Typography> <br></br>
+ <Box display="flex" alignItems="center" mb={2}>
+                  <LocationOnIcon color="white" sx={{ mr: 1 }} />
+                <Typography variant="body1">
+
+Shop no. 30, 1st Floor, Amarante CHS, Sector 9E,<br></br>
 Near D-Mart, Kalamboli, Navi Mumbai – 410218<br></br>
-Phone: +91 94211 09516
 </Typography>
+</Box>
+ <Box display="flex" alignItems="center">
+ <CallTwoToneIcon color="white" sx={{ mr: 2,ml:0.5,fontSize:19 }} />
+  <Typography variant="body1">
++91 94211 09516
+</Typography>
+</Box>
 </Grid>
                             <Grid item xs={12} sm={12} md={7}>
                             
