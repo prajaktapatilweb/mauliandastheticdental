@@ -71,7 +71,7 @@ const DrDombe = () => {
                 <div className='blob'></div>
                 <div className='imageContainer'>
                   <Image
-                    src="/images/asthetic/dr/dr1.jpg"
+                    src="/images/asthetic/dr/dr2.jpg"
                     alt="Doctor"
                     fill
                     className='image'

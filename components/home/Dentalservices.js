@@ -21,6 +21,29 @@ export default function Dentalservices() {
             title: 'Tooth Extraction',
             desc:'Experience a comfortable and safe tooth extraction process.'
         },
+         {
+            icons: "/images/icons/filling.png",
+            icons1: "/images/icons/veeners1.png",
+            title: 'Fillings',
+            desc:'Transform your smile with custom veneers for a flawless look.'
+        },
+        {
+            icons: "/images/icons/whitening.png",
+            icons1: "/images/icons/veeners1.png",
+            title: 'Smile Designing',
+            desc:'Transform your smile with custom veneers for a flawless look.'
+        },
+         {
+            icons: "/images/icons/veeners.png",
+            icons1: "/images/icons/veeners1.png",
+            title: 'FMR',
+            desc:'Transform your smile with custom veneers for a flawless look.'
+        }, {
+            icons: "/images/icons/dentures.png",
+            icons1: "/images/icons/veeners1.png",
+            title: 'Dentures',
+            desc:'Transform your smile with custom veneers for a flawless look.'
+        },
           {
             icons: "/images/icons/dental-care.png",
             icons1: "/images/icons/dental-care1.png",
@@ -29,7 +52,7 @@ export default function Dentalservices() {
         },
 
         {
-            icons: "/images/icons/dental-care.png",
+            icons: "/images/icons/dental-care2.png",
             icons1: "/images/icons/dental-care3.png",
             title: 'Pediatric Dentistry',
             desc:'Ensure your child’s dental health with gentle, specialized care.'
