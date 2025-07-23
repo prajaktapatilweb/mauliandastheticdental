@@ -23,12 +23,14 @@ export default function Cliniclinks() {
           title:"Aesthetic Dental Clinic",
         description:"From preventive checkups and painless root canals to smile designing and implants, Aesthetic Dental Clinic offers modern, personalized dental care using advanced techniques and equipment.",
         buttonText:" Visit Website",
-         link:'/astheticdental'},
+         link:'/astheticdental'
+        },
          {
           title:"Mauli Pediatric Clinic",
         description:"Mauli Hospital offers complete pediatric care — including NICU, vaccinations, child development, and adolescent health — along with general and emergency medical services for families.",
         buttonText:" Visit Website",
-         link:'/maulichildren'},
+         link:'/maulichildren'
+        },
     ]
   return (
     <div>
@@ -67,7 +69,7 @@ export default function Cliniclinks() {
                 <Button
                   variant="contained"
                   size="medium"
-                  href="/maulichildren"
+                  href={item.link}
                   sx={{
                     mt: 3,
                     backgroundColor: "#1b3898",
