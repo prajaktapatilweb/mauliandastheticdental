@@ -25,11 +25,27 @@ const faqData = [
         question: 'Is preventive care really necessary if baby teeth fall out?',
         answer: 'Absolutely! Healthy baby teeth support speech, chewing, and guide permanent teeth.',
     },
+     {
+        question: 'Why is general anesthesia used for dental treatment in special kids?',
+        answer: 'General anesthesia helps ensure complete safety, comfort, and cooperation during dental procedures, especially for children with special healthcare needs who may not tolerate treatment under normal conditions.',
+    },
+    {
+        question:'Is general anesthesia safe for my child?',
+        answer:'Yes. When administered by qualified anesthesiologists in a hospital or specialized dental setup, general anesthesia is generally safe. Pre-treatment evaluation and monitoring help minimize risks.'
+    },
+    {
+        question:'Do you treat children with special needs at your dental clinic?',
+        answer:'Yes, we provide compassionate, specialized dental care for children with physical, developmental, behavioral, or emotional conditions. Our team is trained to ensure a calm, safe, and supportive environment.'
+    },
+    {
+        question:'How do you manage dental treatment for children who are uncooperative or anxious?',
+        answer:'We use behavior management techniques, a child-friendly setup, and in some cases, conscious sedation or general anesthesia to ensure a positive and stress-free experience.'
+    }
 ];
 
 export default function FAQAccordion() {
     return (
-        <Container sx={{py:5}}>
+        <Container sx={{pt:7,pb:1}}>
                         <Heading data={headList7}></Heading>
         <div style={{  margin: '0 auto', padding: '20px' }}>
             {faqData.map((item, index) => (

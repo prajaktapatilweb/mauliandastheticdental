@@ -7,6 +7,7 @@ import Countdown from "../components/home/Countdown";
 import Clinicinfo from "../components/home/Clinicinfo";
 import DrDombe from "../components/home/DrAkshay";
 import FAQAccordion from "../components/home/FAQAccordion";
+import Equipment from "../components/home/Equipment";
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         <Photogallery />
         {/* <Awards/> */}
         <Testimonial></Testimonial>
+        <Equipment/>
       </Suspense>
       <FAQAccordion/>
       <Contact></Contact> 

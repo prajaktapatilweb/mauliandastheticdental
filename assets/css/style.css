@@ -407,6 +407,20 @@ section {
     font-size: 25px;
   }
 }
+.paras1 {
+  font-size: 35px;
+  /* font-family: "ABeeZee", sans-serif; */
+  font-weight: bold;
+    background: linear-gradient(
+    to bottom,
+    #520000 0%,
+    #520000 75%,
+    #92664f 4%,
+    #92664f 1%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .h8 {
   font-size: 42px;
   font-weight: 600;

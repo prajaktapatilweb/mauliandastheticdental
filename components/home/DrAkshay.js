@@ -107,9 +107,11 @@ const DrDombe = () => {
                   }}
                 >
                   <Typography>
-                    <b>Dr. Sunita Taware</b><br></br>
-BDS - Paedodontics<br></br>
-MDS – Medicine And Radiology<br></br><br></br>
+                   <span className="paras1" style={{fontSize:30,color:'#520000'}}><b>Dr. Sunita Taware</b></span><br></br>
+<b>BDS - Paedodontics</b><br></br>
+<b>MDS – Oral Medicine And Radiology</b><br></br>
+<b>Fellowship in Pediatric Dentistry(MUHS)</b>
+<br></br><br></br>
 
 <b>Dr. Sunita Taware</b> is an experienced dentist and the founder of Aesthetic Dental Clinic in Kalamboli, Navi Mumbai, with over 15 years of dedicated practice. She holds a B.D.S from MGV Dental College, Nashik, and an M.D.S in Oral Medicine and Radiology (OMDR) from Government Dental College & Hospital, Mumbai. Additionally, she has completed a Fellowship in Restorative Pediatric Dentistry (FRPD) from YMT Dental College, Kharghar, Mumbai.
 <br></br><br></br>
