@@ -5,6 +5,7 @@ import createEmotionServer from '@emotion/server/create-instance'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
 
+
 class MyDocument extends Document {
   render() {
     return (
@@ -18,8 +19,20 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet"></link>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet"></link>
+<link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet"></link>
+<link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet"></link>
+<link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet"></link>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet"></link>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet"></link>
+
+
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
-          {this.props.emotionStylesTags}
+          {this.props.styles}
+
 
           {/* <!-- Google Tag Manager --> */}
           <script
