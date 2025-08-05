@@ -16,6 +16,7 @@ import Heading from '../Heading';
 import { headList15, headList8 } from '../../constants/titlefile';
 import { motion } from "framer-motion";
 import { contactdetails } from '../../constants/contactdetails';
+import GoogleRecaptcha from '../../GoogleRecaptcha';
 
 
 
@@ -257,7 +258,7 @@ const Contactmauli = () => {
                             </Box>
                           </Grid>
                           <Grid item xs={12} sx={{ mb: { xs: 3, lg: 3 } }}>
-                            {/* <GoogleRecaptcha /> */}
+                         <GoogleRecaptcha/>
                             <ErrorMessage name="recaptcha" component="div" style={{ color: 'red' }} />
                           </Grid>
                         </Grid>
