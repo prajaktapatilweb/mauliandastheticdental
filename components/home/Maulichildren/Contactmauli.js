@@ -146,9 +146,9 @@ const Contactmauli = () => {
                   <CallTwoToneIcon color="secondary" sx={{ mr: 1 }} />
                   <Typography variant="h6">Contact Us</Typography>
                 </Box>
-                <Link href={`tel:${contactdetails.phone}`} sx={{ display: 'block', mb: 1,color:'black',textDecoration:'underline darkblue' }}>+{contactdetails.phone}</Link>
-                <Link href={`tel:${contactdetails.phone1}`} sx={{ display: 'block', mb: 1,color:'black',textDecoration:'underline darkblue' }}>+{contactdetails.phone1}</Link>
-                <Link href={`mailto:${contactdetails.email}`} sx={{ display: 'block',color:'black',textDecoration:'underline darkblue' }}>{contactdetails.email}</Link>
+                <Link href={`tel:${contactdetails.phone3}`} sx={{ display: 'block', mb: 1,color:'black',textDecoration:'underline darkblue' }}>+91 7498557098</Link>
+                <Link href={`tel:${contactdetails.phone1}`} sx={{ display: 'block', mb: 1,color:'black',textDecoration:'underline darkblue' }}>+022 35441475</Link>
+                <Link href={`mailto:${contactdetails.email1}`} sx={{ display: 'block',color:'black',textDecoration:'underline darkblue',fontSize:{xs:15,sm:15,md:16} }}>{contactdetails.email1}</Link>
               </Box>
             </Grid>
 

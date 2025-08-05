@@ -1,13 +1,13 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import AppThemeSetting from './AppThemeSetting';
 import Mauliheader from '../header/mauliheader';
 import Footer1 from '../footer/footer1';
+import AppThemeSetting1 from './AppThemeSetting1';
 
 const MainLayout1 = ({ children }) => {
   return (<Box component="main">
     <Mauliheader/>
-    <AppThemeSetting/>
+    <AppThemeSetting1/>
     {children}
     <Footer1 />
   </Box>);

@@ -7,9 +7,9 @@ import Image from 'next/image';
 import { Link } from '@mui/material';
 import ScrollUp from '../home/ScrollUp';
 
-const AppThemeSetting = () => {
+const AppThemeSetting1 = () => {
  
-  const contactno2 = "+919421109516";
+  const contactno2 = "+917498557098";
 
   return (
     <>    
@@ -88,4 +88,4 @@ const AppThemeSetting = () => {
   );
 };
 
-export default AppThemeSetting;
+export default AppThemeSetting1;

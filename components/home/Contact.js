@@ -146,9 +146,8 @@ const Contact = () => {
                   <CallTwoToneIcon color="primary" sx={{ mr: 1 }} />
                   <Typography variant="h6">Contact Us</Typography>
                 </Box>
-                <Link href={`tel:${contactdetails.phone}`} sx={{ display: 'block', mb: 1 }}>{contactdetails.phone}</Link>
-                <Link href={`tel:${contactdetails.phone1}`} sx={{ display: 'block', mb: 1 }}>{contactdetails.phone1}</Link>
-                <Link href={`mailto:${contactdetails.email}`} sx={{ display: 'block' }}>{contactdetails.email}</Link>
+                <Link href={`tel:${contactdetails.phone}`} sx={{ display: 'block', mb: 1,color:'primary.dark' }}>+91 {contactdetails.phone}</Link>
+                <Link href={`mailto:${contactdetails.email}`} sx={{ display: 'block',color:'primary.dark',fontSize:{xs:14,sm:15,md:16} }}>{contactdetails.email}</Link>
               </Box>
             </Grid>
 
