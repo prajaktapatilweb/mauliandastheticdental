@@ -27,7 +27,7 @@ export default function Thankyou() {
                                     sx={{
                                         // width: { md: 850 },
                                         position: 'relative',
-                                        fontSize: { xs: 20, md: 25 },
+                                        fontSize: { xs: 20, md: 28 },
                                         mb: { xs: 3, sm: 0 },
                                         letterSpacing: 1.5,
                                         fontWeight: 'bold',
@@ -38,10 +38,12 @@ export default function Thankyou() {
                                 >
                                   Thank you for contacting us! Your smile matters, and we’ll be in touch soon!
                                 </Typography>
+                                <Box sx={{textAlign:'center',color:'wheat'}}>
                                 <h4>We appreciate your message! Get ready for a healthier, happier smile—our team will be in touch shortly!</h4>
+                                </Box>
                                 <Stack direction='column' alignItems='center' >
-                                    <Button size="large" variant="contained" sx={{ mt: 2, fontSize: 17, backgroundColor: 'secondary.main', alignContent: 'center', color: 'white' }}>
-                                        <Link href="/#"  sx={{color:'black'}}>
+                                    <Button size="large" variant="contained" sx={{ mt: 2, fontSize: 17, backgroundColor: 'primary.light', alignContent: 'center', color: 'white' }}>
+                                        <Link href="/#"  sx={{color:'white'}}>
                                             Home
                                         </Link>
                                     </Button>
