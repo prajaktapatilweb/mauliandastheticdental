@@ -7,17 +7,14 @@ export default function Thankyou() {
             {/* <HomeHero /> */}
             <Box
                 sx={{
-            backgroundImage:'linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),url("/images/backthank.webp")',
+            backgroundImage:'linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)),url("/images/hero1.jpg")',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     display: 'flex',
                     // width: '100%',
                     height: '100vh',
-
                     alignItems: 'center',
                     justifyItems: 'center'
-
-                    // py: { xs: 7, md: 14 },
                 }}
             >
                 {/* "thank you " : null} */}

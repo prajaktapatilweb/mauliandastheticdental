@@ -13,12 +13,10 @@ import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
 import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Heading from '../Heading';
-import { headList15, headList8 } from '../../constants/titlefile';
+import { headList15} from '../../constants/titlefile';
 import { motion } from "framer-motion";
 import { contactdetails } from '../../constants/contactdetails';
 import GoogleRecaptcha from '../../GoogleRecaptcha';
-
-
 
 const All = [
   { key: 1, text: 'Braces/ aligners', value: 'Braces/ aligners' },
@@ -42,12 +40,8 @@ const validationSchema = yup.object({
   selection: yup.string(),
   recaptcha: yup.string().required('Please complete the reCAPTCHA'),  // Make reCAPTCHA required
 });
-
 const Contactmauli = () => {
-
-
   const router = useRouter();
-
   const onSubmit = async (values, submitProps) => {
     console.log({ values })
     Axios.post("/api/nodemail", {
@@ -67,7 +61,6 @@ const Contactmauli = () => {
         alert("Error in submission. Please resubmit");
       });
   };
-
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 100 },  // Initial state: invisible and below the viewport
     visible: {
@@ -124,58 +117,58 @@ const Contactmauli = () => {
             viewport={{ once: true }} // Optionally only animate once
           >
             <Grid container spacing={2} alignItems='center' justifyContent='center'>
-               <Grid item xs={12} md={6}>
-              <Box sx={{
-                backgroundColor: '#ffffff',
-                p: 4,
-                borderRadius: 4,
-                boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
-              }}>
-                <Box display="flex" alignItems="center" mb={2}>
-                  <LocationOnIcon color="secondary" sx={{ mr: 1 }} />
-                  <Typography variant="h6">Our Location</Typography>
-                </Box>
-                <Typography>{contactdetails.address}</Typography>
+              <Grid item xs={12} md={6}>
+                <Box sx={{
+                  backgroundColor: '#ffffff',
+                  p: 4,
+                  borderRadius: 4,
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                }}>
+                  <Box display="flex" alignItems="center" mb={2}>
+                    <LocationOnIcon color="secondary" sx={{ mr: 1 }} />
+                    <Typography variant="h6">Our Location</Typography>
+                  </Box>
+                  <Typography>{contactdetails.address}</Typography>
 
-                <Box display="flex" alignItems="center" mt={3} mb={1}>
-                  <EmailTwoToneIcon color="secondary" sx={{ mr: 1 }} />
-                  <Typography variant="h6">Working Hours</Typography>
-                </Box>
-                <Typography>Monday – Sunday: 24 Hours</Typography>
+                  <Box display="flex" alignItems="center" mt={3} mb={1}>
+                    <EmailTwoToneIcon color="secondary" sx={{ mr: 1 }} />
+                    <Typography variant="h6">Working Hours</Typography>
+                  </Box>
+                  <Typography>Monday – Sunday: 24 Hours</Typography>
 
-                <Box display="flex" alignItems="center" mt={3} mb={1}>
-                  <CallTwoToneIcon color="secondary" sx={{ mr: 1 }} />
-                  <Typography variant="h6">Contact Us</Typography>
+                  <Box display="flex" alignItems="center" mt={3} mb={1}>
+                    <CallTwoToneIcon color="secondary" sx={{ mr: 1 }} />
+                    <Typography variant="h6">Contact Us</Typography>
+                  </Box>
+                  <Link href={`tel:${contactdetails.phone3}`} sx={{ display: 'block', mb: 1, color: 'black', textDecoration: 'underline darkblue' }}>+91 7498557098</Link>
+                  <Link href={`tel:${contactdetails.phone1}`} sx={{ display: 'block', mb: 1, color: 'black', textDecoration: 'underline darkblue' }}>+022 35441475</Link>
+                  <Link href={`mailto:${contactdetails.email1}`} sx={{ display: 'block', color: 'black', textDecoration: 'underline darkblue', fontSize: { xs: 15, sm: 15, md: 16 } }}>{contactdetails.email1}</Link>
                 </Box>
-                <Link href={`tel:${contactdetails.phone3}`} sx={{ display: 'block', mb: 1,color:'black',textDecoration:'underline darkblue' }}>+91 7498557098</Link>
-                <Link href={`tel:${contactdetails.phone1}`} sx={{ display: 'block', mb: 1,color:'black',textDecoration:'underline darkblue' }}>+022 35441475</Link>
-                <Link href={`mailto:${contactdetails.email1}`} sx={{ display: 'block',color:'black',textDecoration:'underline darkblue',fontSize:{xs:15,sm:15,md:16} }}>{contactdetails.email1}</Link>
-              </Box>
-            </Grid>
+              </Grid>
 
               <Grid item xs={12} md={6}>
-  <Card sx={{
-                p: 4,
-                borderRadius: 4,
-                background: 'linear-gradient(to right, #ffffff, #f9f7f6)',
-                boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)',
-                transition: 'transform 0.3s ease',
-                '&:hover': {
-                  transform: 'translateY(-5px)'
-                }
-              }}>                  <Formik
-                    validateOnChange={true}
-                    initialValues={{
-                      name: '',
-                      email: '',
-                      mobilenumber: '',
-                      msg: '',
-                      selection: '',
-                      recaptcha: ''
-                    }}
-                    validationSchema={validationSchema}
-                    onSubmit={onSubmit}
-                  >
+                <Card sx={{
+                  p: 4,
+                  borderRadius: 4,
+                  background: 'linear-gradient(to right, #ffffff, #f9f7f6)',
+                  boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)',
+                  transition: 'transform 0.3s ease',
+                  '&:hover': {
+                    transform: 'translateY(-5px)'
+                  }
+                }}>                  <Formik
+                  validateOnChange={true}
+                  initialValues={{
+                    name: '',
+                    email: '',
+                    mobilenumber: '',
+                    msg: '',
+                    selection: '',
+                    recaptcha: ''
+                  }}
+                  validationSchema={validationSchema}
+                  onSubmit={onSubmit}
+                >
                     {({ isSubmitting }) => (
                       <Form style={{ textAlign: 'left' }}>
                         <Grid container spacing={2}>
@@ -258,7 +251,7 @@ const Contactmauli = () => {
                             </Box>
                           </Grid>
                           <Grid item xs={12} sx={{ mb: { xs: 3, lg: 3 } }}>
-                         <GoogleRecaptcha/>
+                            <GoogleRecaptcha />
                             <ErrorMessage name="recaptcha" component="div" style={{ color: 'red' }} />
                           </Grid>
                         </Grid>
@@ -287,7 +280,6 @@ const Contactmauli = () => {
           </motion.div>
         </Container>
       </section>
-
     </Box>
   );
 };
