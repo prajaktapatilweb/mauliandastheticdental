@@ -39,7 +39,7 @@ export default function Thankyou() {
                                   Thank you for contacting us! Your smile matters, and we’ll be in touch soon!
                                 </Typography>
                                 <Box sx={{textAlign:'center',color:'wheat'}}>
-                                <h4>We appreciate your message! Get ready for a healthier, happier smile—our team will be in touch shortly!</h4>
+                                <h3>We appreciate your message! Get ready for a healthier, happier smile—our team will be in touch shortly!</h3>
                                 </Box>
                                 <Stack direction='column' alignItems='center' >
                                     <Button size="large" variant="contained" sx={{ mt: 2, fontSize: 17, backgroundColor: 'primary.light', alignContent: 'center', color: 'white' }}>
