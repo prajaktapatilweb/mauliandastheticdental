@@ -4,7 +4,6 @@ import { createEmotionCache } from '../utils'
 import createEmotionServer from '@emotion/server/create-instance'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
-import Head from 'next/head';
 
 
 
