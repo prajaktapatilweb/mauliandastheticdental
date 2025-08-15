@@ -16,5 +16,15 @@ export const contactdetails = {
         twit: 'https://x.com/clinic_den54181',
         pinterest: 'https://www.pinterest.com/aestheticdentalcliniic/'
 
+    },
+    socialLinks1: {
+        facebook: 'https://www.facebook.com/mauli.children.hospital/',
+        instagram: 'https://www.instagram.com/mauli_children_hospital',
+        youtube: 'https://www.youtube.com/@mauli_children_hospital',
+        linkedin: 'https://linkedin.com/in/yourprofile',
+        threads: 'https://www.threads.net/@aesthetic.dental.cliniic',
+        twit: 'https://x.com/mauli_hospital',
+        pinterest: 'https://www.pinterest.com/aestheticdentalcliniic/'
+
     }
 };

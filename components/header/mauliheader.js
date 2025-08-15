@@ -89,7 +89,7 @@ function Mauliheader() {
 
                                 <Link href={`tel:${contactdetails.phone}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white', marginRight: 10 }}>
-                                        {contactdetails.phone}
+                                        {contactdetails.phone3}
                                     </a>
                                 </Link>
 
@@ -104,9 +104,9 @@ function Mauliheader() {
                                     <EmailTwoToneIcon />{" "}
                                 </IconButton>
                                 <Link
-                                    href={`mailto:${contactdetails.email}`} target="_blank">
+                                    href={`mailto:${contactdetails.email1}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white' }}>
-                                        {contactdetails.email}
+                                        {contactdetails.email1}
 
                                     </a>
                                 </Link>
@@ -129,7 +129,7 @@ function Mauliheader() {
                             <IconButton aria-label="facebook">
                                 {" "}
                                 <a
-                                    href={contactdetails.socialLinks.facebook}
+                                    href={contactdetails.socialLinks1.facebook}
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="facebook"
@@ -140,7 +140,7 @@ function Mauliheader() {
 
                             <IconButton aria-label="instagram">
                                 <a
-                                    href={contactdetails.socialLinks.instagram}
+                                    href={contactdetails.socialLinks1.instagram}
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="instagram"
@@ -153,7 +153,7 @@ function Mauliheader() {
 
                             <IconButton aria-label="youtube">
                                 <a
-                                    href={contactdetails.socialLinks.youtube}
+                                    href={contactdetails.socialLinks1.youtube}
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="youtube"

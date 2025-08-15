@@ -2,4 +2,4 @@ User-agent: *
 
 Disallow: 
 
-Sitemap: https://www.abbaddentalclinic.com/sitemap.xml
+Sitemap: https://www.maulihospitalanddentalcare.com/sitemap.xml

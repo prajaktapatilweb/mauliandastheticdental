@@ -146,27 +146,7 @@ function ResponsiveAppBar() {
                                     <YouTubeIcon sx={{ color: "white" }}></YouTubeIcon>
                                 </a>
                             </IconButton>
-                            {/* <IconButton aria-label="justdial">
-                                <a
-                                    href="https://www.justdial.com/Nashik/Abbad-Dental-Clinic-Implant-Center-Opp-BYK-College-Next-to-Fastrack-Showroom-College-Road/0253PX253-X253-221218231157-S3D4_BZDET"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="linkedin"
-                                >
-                                    <Image src="/images/jd.png" width={20} height={20} ></Image>
-
-                                </a>
-                            </IconButton>
-                            <IconButton aria-label="linktree">
-                                <a
-                                    href="https://linktr.ee/AbbadDentalClinic"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="linkedin"
-                                >
-                                    <Image src="/images/icons/linktree.webp" width={20} height={20} ></Image>
-                                </a>
-                            </IconButton> */}
+                         
                         </Box>
                     </Box>
                 </Container>
