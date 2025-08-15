@@ -9,6 +9,8 @@ import "../styles/react-slick.css";
 import { useRouter } from "next/router";
 import Script from 'next/script';
 import { useEffect } from "react";
+import Head from 'next/head';
+
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();

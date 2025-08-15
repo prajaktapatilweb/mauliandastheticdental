@@ -9,7 +9,7 @@ const MainLayout1 = ({ children }) => {
   return (<Box component="main">
       <Head>
            <link rel="icon" href="/maulilogo1.jpg" />
-        <title>Mauli Children & Multispeciality Hospital in Kalamboli, Navi Mumbai</title>
+        <title>Children & Multispeciality Hospital in Kalamboli, Navi Mumbai</title>
                 <meta name="title" content="Mauli Children & Multispeciality Hospital in Kalamboli, Navi Mumbai"/>
                 <meta name="description" content="From newborns to teens, we’ve got every stage covered — NICU, PICU, vaccines, growth care & more. See why parents call us their ‘second home’ for child health." />
                 <link rel="canonical" href="https://www.maulihospitalanddentalcare.com/maulichildren"/>

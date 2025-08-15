@@ -3,6 +3,9 @@ import Box from '@mui/material/Box';
 import { Footer } from '../footer';
 import { Header } from '../header';
 import AppThemeSetting from './AppThemeSetting';
+import Head from 'next/head';
+
+
 const MainLayout = ({ children }) => {
   return (<Box component="main">
      <Head>
