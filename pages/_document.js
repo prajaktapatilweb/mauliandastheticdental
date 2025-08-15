@@ -3,8 +3,6 @@ import theme from '../config/theme'
 import { createEmotionCache } from '../utils'
 import createEmotionServer from '@emotion/server/create-instance'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
-
 
 
 class MyDocument extends Document {

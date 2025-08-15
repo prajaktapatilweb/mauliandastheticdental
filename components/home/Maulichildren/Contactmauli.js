@@ -19,13 +19,14 @@ import { contactdetails } from '../../constants/contactdetails';
 import GoogleRecaptcha from '../../GoogleRecaptcha';
 
 const All = [
-  { key: 1, text: 'Braces/ aligners', value: 'Braces/ aligners' },
-  { key: 2, text: 'Dental implants', value: 'Dental implants' },
-  { key: 3, text: 'Dental veneers (smile designing)', value: 'Dental veneers (smile designing)' },
-  { key: 4, text: 'Full mouth rehabilitation', value: 'Full mouth rehabilitation' },
-  { key: 5, text: 'Pediatric (kids dentistry)', value: 'Pediatric (kids dentistry)' },
-  { key: 6, text: 'Root canal', value: 'Root canal' },
-  { key: 7, text: 'Wisdom teeth extraction/ Teeth extraction', value: 'Wisdom teeth extraction/ Teeth extraction' },
+  { key: 1, text: 'Vaccination', value: 'Vaccination' },
+  { key: 2, text: 'Nebulization', value: 'Nebulization' },
+  { key: 3, text: 'Parental Counselling', value: 'Parental Counselling' },
+  { key: 4, text: 'Diet Counselling', value: 'Diet Counselling' },
+  { key: 5, text: 'New-born Screening', value: 'New-born Screening' },
+  { key: 6, text: 'Laboratory Services', value: 'Laboratory Services' },
+  { key: 7, text: 'NICU, PICU', value: 'NICU, PICU' },
+  { key: 1, text: 'Pediatric Surgery', value: 'Pediatric Surgery' },
   { key: 8, text: 'Other', value: 'Other' }
 ];
 
