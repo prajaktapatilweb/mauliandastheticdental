@@ -99,17 +99,19 @@ Gentle pediatric dentistry and complete dental solutions for your entire family.
 
             <Typography
             
-              style={{
-                marginTop: 4,
+              sx={{
+                marginTop: 1,
                 marginBottom: 0,
-                marginRight:2
+                marginRight:2,
+                px:2
                
               }}
             >
-              <b>Aesthetic Dental Clinic</b> in Kalamboli, Navi Mumbai, headed by Dr. Sunita Taware (15+ years exp.), is dedicated to delivering comprehensive dental care under one roof. We provide a wide range of treatments including Single Sitting RCT, dental implants, cosmetic veneers, braces & clear aligners, teeth whitening, and painless wisdom tooth removal. 
- <br /><br/>
-Our clinic’s modern yet soothing ambiance is thoughtfully designed to reduce dental anxiety and create a comfortable experience for every patient. Blending advanced dental technology with a patient-first, ethical approach, we ensure personalized care for children, adults, and seniors alike. At Aesthetic Dental Clinic, we focus on helping you and your family enjoy healthy, beautiful smiles for life.
-            </Typography>
+              Welcome to <b>Aesthetic Dental Clinic</b>, Kalamboli – your trusted destination for advanced and compassionate dental care. Led by <b>Dr. Sunita Taware</b>, a highly experienced <b>Pediatric Dentist in Kalamboli</b> with over 15 years of expertise, our clinic offers comprehensive dental services for patients of all ages.
+<br></br><br></br>Whether you’re looking for a caring <b>Kids Dentist in Navi Mumbai</b> or need specialized treatments like <b>Single Sitting RCT</b>, dental implants, cosmetic veneers, braces and clear aligners, teeth whitening, or painless wisdom tooth removal – we provide it all under one roof.
+<br></br><br></br>As a leading <b>Pedodontist in Navi Mumbai</b>, Dr. Taware ensures that children receive gentle, age-appropriate dental care in a warm, friendly environment. Our modern clinic is thoughtfully designed to ease dental anxiety and promote a stress-free experience for children, adults, and seniors alike.
+<br></br><br></br>Combining cutting-edge dental technology with a personalized, ethical approach, Aesthetic Dental Clinic is committed to helping you and your family achieve healthy, beautiful smiles for life.
+    </Typography>
           </motion.div>
           
         </Grid>

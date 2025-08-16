@@ -37,7 +37,7 @@ const Drgalleryitem = ({ item }) => {
         >
           <Image
             alt='dental'
-            src={`/images/asthetic/assclinic/clinic${item}.jpg`}
+            src={`/images/asthetic/assclinic/as/clinic${item}.jpg`}
             layout="responsive"
             width='100'
             height='100'
