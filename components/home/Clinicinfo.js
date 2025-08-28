@@ -46,7 +46,7 @@ const Clinicinfo = () => {
   >
 
 
-    <Grid item xs={12} md={5} sx={{ p: 1 }}  alignItems="center"
+    <Grid item xs={12} md={5}  sx={{ p:{xs:1,sm:1,md: 3} }}  alignItems="center"
     justifyContent="center">
           <motion.div
             variants={fadeLeftVariants}
@@ -59,7 +59,7 @@ const Clinicinfo = () => {
         </Grid>
 
         {/* Right Side (Text Content) */}
-        <Grid item xs={12} md={7} textAlign="justify" sx={{ p: 2}}  alignItems="center"
+        <Grid item xs={12} md={7} textAlign="justify" sx={{ p: {xs:2,sm:2,md:0} }}  alignItems="center"
     justifyContent="center">
         <motion.div
   className="textcontainer"

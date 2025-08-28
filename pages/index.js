@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 import Link from 'next/link';
+import Head from 'next/head';
 
 
 export default function Home() {
@@ -15,7 +16,13 @@ export default function Home() {
   };
 
   return (
-    <Box
+   <> 
+   <Head>
+    <title>Mauli Children Hospital & Aesthetic Dental Care</title>
+     <link rel="canonical" href="https://www.maulihospitalanddentalcare.com/"/>
+
+</Head>   
+   <Box
   sx={{
     position: 'relative',
     minHeight: '100vh',
@@ -344,5 +351,6 @@ export default function Home() {
         </Grid>
       </Container>
     </Box>
+    </>
   );
 }

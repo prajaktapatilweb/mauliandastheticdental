@@ -87,7 +87,7 @@ function Mauliheader() {
                                     <CallTwoToneIcon />
                                 </IconButton>
 
-                                <Link href={`tel:${contactdetails.phone}`} target="_blank">
+                                <Link href={`tel:${contactdetails.phone3}`} target="_blank">
                                     <a className="nav-link-inner--text" style={{ color: 'white', marginRight: 10 }}>
                                         {contactdetails.phone3}
                                     </a>
